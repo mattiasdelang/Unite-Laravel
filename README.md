@@ -24,7 +24,7 @@ The platform gives the opportunity to make tasks and to show them to the neighbo
 
 1 neighbourhood has a diameter of 2 km, and is base on the google maps api.
 
-Some images:
+## Some images
 
 ![Login](http://image.prntscr.com/image/824778b1a84f4fe0b5707f423b320fa3.png)
 
