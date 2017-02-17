@@ -27,8 +27,12 @@ Some images:
 
 ![Login](http://image.prntscr.com/image/824778b1a84f4fe0b5707f423b320fa3.png)
 
+![Choose Community](http://image.prntscr.com/image/4861157d784748439fbb0b00dc0e1991.png)
+
 ![First time](http://image.prntscr.com/image/d42baa92153e4acb994a4bf0b649de0b.png)
 
 ![Map overview](http://image.prntscr.com/image/2ca0a00e6189463395aab4a26e14674e.png)
 
 ![A task](http://image.prntscr.com/image/2590edceb98c4ab2b5815723feef8ec9.png)
+
+
