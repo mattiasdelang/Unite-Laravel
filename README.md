@@ -1,6 +1,6 @@
 Unite
 ==========
-# Creators
+## Creators
 
 **Yoshi Mannaert** - UX & Front-end
 
@@ -8,7 +8,7 @@ Unite
 
 **Stijn D'Hollander** - Back-end & Front-end
 
-# Links to see the end result #
-## [Homepage](http://www.unite-as.one)
-## [Application](http://beta.unite-as.one)
+## Links to see the end result #
+### [Homepage](http://www.unite-as.one)
+### [Application](http://beta.unite-as.one)
 
