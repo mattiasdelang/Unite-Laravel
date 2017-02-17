@@ -1,0 +1,90 @@
+<?php
+
+	if (!empty($POST['email'])) {
+		$api_key = "b683fdbd161aa51cd569b4f7cbd5e246-us12";
+		$list_id = "af4af55c25";
+
+		require('Mailchimp.php');
+		$Mailchimp = new Mailchimp($api_key);
+		$subscriber = $Mailchimp->lists->subscribe($list_id, array('email' => $_POST['email']));
+
+		if ( ! empty($subscriber['leid'])) {
+		    // Success
+		}
+	}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Unite</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/screen.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div id="backimage">
+		<p class="logo">Unite</p>
+		<h1 class="slagzin">Help je buren.</br>Verbeter je buurt!</h1>
+		<div class="email">
+			<form action="/stijndhollander.us12.list-manage.com/subscribe/post?u=51e9022a13fc053a8f0f769aa&amp;id=af4af55c25" method="post">
+				<input type="email" name="EMAIL" placeholder="Geef uw email op">
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_51e9022a13fc053a8f0f769aa_af4af55c25" tabindex="-1" value=""></div>
+				<input type="submit" value="Inschrijven">
+			</form>
+		</div>
+	</div>
+
+	<div id="explain">
+		<h1 class="title">Hoe werkt het?</h1>
+		<div class="columns">
+			<div class="column join">
+				<img src="images/join.png" alt="Join Icon">
+				<h3>Sluit je aan bij jouw buurt</h3>
+				<p>Zoek of er al een community is in je buurt. Hier kan je je dan bij aansluiten. Het kan natuurlijk ook zijn dat je een invite krijgt!</p>
+			</div>
+			<div class="column task">
+				<img src="images/task.png" alt="Task Icon">
+				<h3>Voeg zelf taken toe</h3>
+				<p>Als je taken hebt die je zelf niet kan uitvoeren of waar je geen tijd voor hebt kan je ze hier toevoegen. Zo kan een behulpzame buur je uit de nood helpen.</p>
+			</div>
+			<div class="column work">
+				<img src="images/work.png" alt="Work Icon">
+				<h3>Help je buren met hun taken</h3>
+				<p>Je buren kunnen natuurlijk ook taken toevoegen. Ben je zelf geschikt om een bepaalde taak uit te voeren? Ga ervoor en bewijs je buur een dienst!</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="map">
+		<h2>Schrijf je nu in op onze nieuwsbrief!</h2>
+		<div class="email">
+			<form action="//stijndhollander.us12.list-manage.com/subscribe/post?u=51e9022a13fc053a8f0f769aa&amp;id=af4af55c25" method="post" novalidate class="validate" target="_blank">
+				<input type="email" placeholder="Geef uw email op">
+				<input type="submit" value="Inschrijven">
+			</form>
+		</div>
+	</div>
+
+<!--
+	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+	<script type='text/javascript'>
+		(function($) {
+			window.fnames = new Array(); 
+			window.ftypes = new Array();
+			fnames[0]='EMAIL';
+			ftypes[0]='email';
+		}
+		(jQuery));
+		var $mcj = jQuery.noConflict(true);
+	</script>-->
+	
+</body>
+</html>
+
+
+
+
+
